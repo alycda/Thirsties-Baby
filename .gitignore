@@ -1,0 +1,10 @@
+_db_backups/
+_dev/
+_images/
+blog/
+cmsadmin/
+
+.sql
+.LCK
+_includes/config.php
+Connections/DB.php

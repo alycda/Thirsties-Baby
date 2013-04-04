@@ -1,0 +1,32 @@
+/*	Slider
+	------	*/ 
+#photos_slider {height:320px; width: 896px; }	
+#photos_slider .slider { position: absolute; }
+#photos_slider .slider .slides-container { height: 320px; width: 896px; overflow: hidden;  }
+#photos_slider .slider .slides { width: 100000px; }
+#photos_slider .slider .slide { height: 320px; width: 896px; float: left; position: relative;text-transform:uppercase; }
+#photos_slider .slider .slide img { display: block; margin: 0 auto; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; behavior: url(PIE.htc); overflow: hidden;}
+#photos_slider .slider .slide .ind {padding:10px 40px;}
+#photos_slider .slider .slide a { display: block; text-decoration: none; /*background: #fff206;*/ }
+#photos_slider .slider .slide a.current,
+#photos_slider .slider .slide a:hover { }
+
+#photos_slider .slider .slide a.first { margin-left: 3px; }
+#photos_slider .slider .slide a.first:hover { margin-left: 0; }
+#photos_slider .slider .slide a.current-first { margin-left: 0px; margin-right: 0px;}
+#photos_slider .slider .slide a.last { margin-right: 0; }
+
+#photos_slider .slider .next { z-index: 3; width: 16px; height: 0; padding: 28px 0 0; background: url('img/slideshow-arrows2.png') no-repeat; position: absolute; right: 20px; bottom: 13px; overflow: hidden; }
+#photos_slider .slider .previous { z-index: 3; width: 16px; height: 0; padding: 28px 0 0; background: url('img/slideshow-arrows2.png') no-repeat 0 -28px; position: absolute; right: 225px; bottom: 13px; overflow: hidden; }
+#photos_slider .slider .viewing-container { position: absolute; bottom: 0px; width:100%; height:40px;}
+
+#photos_slider .slider .viewing-container .viewing-caption {font-family:  'DINProBlack', Arial; font-weight: normal; color:#FFFFFF; padding:3px 15px; float:left; font-weight: normal; text-transform:uppercase; font-size:13px; min-width: 595px;}
+
+#photos_slider .slider .viewing-container .viewing-boxes { margin: 0 40px; width: 185px; height:30px; float: right; padding:0;}
+#photos_slider .slider .viewing-container .viewing-boxes a { display: block; float: left; width: 26px; height: 25px; background: #fff; margin: 0 0 0 10px; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius:4px; -khtml-border-radius:4px; }
+#photos_slider .slider .viewing-container .viewing-boxes a.current { background: #fafce1; }
+#photos_slider .slider .corner { background: url(img/corners-20.png); width: 20px; height: 20px; }
+#photos_slider .slider .corner#tr { position: absolute; top: 0; right: 0; background-position: 0px -20px; }
+#photos_slider .slider .corner#tl { position: absolute; top: 0; left: 0; background-position: -20px -20px; }
+#photos_slider .slider .corner#br { position: absolute; bottom: 0; right: 0; background-position: 0px 0px; }
+#photos_slider .slider .corner#bl { position: absolute; bottom: 0; left: 0; background-position: -20px 0px; }
